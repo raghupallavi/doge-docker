@@ -16,13 +16,13 @@ Run a Dogecoin fullnode in an isolated Docker container
 
 It's not that hard, actually. There are two ways to get it up and running:
 
-### A. Pull and run the image from the [Docker Store](https://store.docker.com/community/images/gxgow/dogenode)
+### A. Pull and run the image from the [Docker Store](https://hub.docker.com/r/raghupallavi/dogenode)
 
 You only need to run one command to get it up and running:
 
 ```bash
 
-docker run -d -p 22556:22556 --name dogenode gxgow/dogenode
+docker run -d -p 22556:22556 --name dogenode raghupallavi/dogenode
 
 ```
 
