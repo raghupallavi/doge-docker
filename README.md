@@ -34,7 +34,7 @@ This requires a few extra steps, but it will get you the same result. It can be 
 
 ```bash
 # Clone the git repository
-git clone https://github.com/GXGOW/Docker-Dogecoin-fullnode.git
+git clone https://github.com/raghupallavi/doge-docker.git
 
 # Perform your customisations (optional)
 
