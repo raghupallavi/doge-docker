@@ -3,11 +3,11 @@
 ## Check if binaries are already installed
 cd ~
 if [ ! -f ~/dogecoin-bin/bin/dogecoind ]; then
-    curl -o dogecoin.tar.gz -Lk https://github.com/dogecoin/dogecoin/releases/download/v1.10.0/dogecoin-1.10.0-linux64.tar.gz
+    curl -o dogecoin.tar.gz -Lk https://github.com/dogecoin/dogecoin/releases/download/v1.14.5/dogecoin-1.14.5-x86_64-linux-gnu.tar.gz
     if [ $? -eq 0 ]; then
         tar -xvf dogecoin.tar.gz
         ## Rename folder appropriately
-        mv dogecoin-1.10.0 dogecoin-bin
+        mv dogecoin-1.14.5 dogecoin-bin
         ## Add dogecoind commands to PATH
         echo 'export PATH=$PATH:~/dogecoin-bin/bin/' > ~/.bashrc
         source ~/.bashrc
