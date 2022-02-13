@@ -1,3 +1,5 @@
+## Source repository: https://github.com/raghupallavi/doge-docker
+
 # Dogecoin node for Docker
 
 ![wow](https://dogecoin.com/assets/img/doge.png)
@@ -14,16 +16,21 @@ Run a Dogecoin fullnode in an isolated Docker container
 
 **Make sure that port 22556 is being forwarded on your router!**
 
-It's not that hard, actually. There are two ways to get it up and running:
+If you are in USA and use xfinity router, use Xfinity app to port forward. In the Xfinity app, go to "Connect" --> <Your wifi name> --> "Advanced Settings" --> "Port Forwarding" --> "Add Port Forward" --> Select the computer that you are running the container, <Manual Setup>, Port number; 22556, Protocol: TCP/UDP and save the changes.
+
+For any other country or non xfinity router, use instructions from the following: https://portforward.com/how-to-port-forward/
+Essentially you need to do the following:
+1. Make sure your computer which is running dogecoin node has a static IP address.
+2. Login to router by browsing to http:://10.0.0.1 and create port forward settings.
+
+There are two ways to get it up and running:
 
 ### A. Pull and run the image from the [Docker Store](https://hub.docker.com/r/raghupallavi/dogenode)
 
 You only need to run one command to get it up and running:
 
 ```bash
-
 docker run -d -p 22556:22556 --name dogenode raghupallavi/dogenode
-
 ```
 
 Just wait until the process completes and boom, your Dogecoin node is up and running!
